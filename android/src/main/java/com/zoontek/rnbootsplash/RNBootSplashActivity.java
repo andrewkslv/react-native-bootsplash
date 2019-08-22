@@ -13,7 +13,6 @@ public class RNBootSplashActivity extends AppCompatActivity {
 
     try {
       int resId = this.getResources().getIdentifier("build_config_package", "string", this.getPackageName());
-        .getPackageName() + ".MainActivity"));
       Intent intent = new Intent(this, Class.forName(this.getString(resId) + ".MainActivity"));
 
       // Pass along FCM messages/notifications etc.
